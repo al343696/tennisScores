@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FondoApp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textGameA8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@android:color/black"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textSetB"
+        app:layout_constraintTop_toBottomOf="@+id/textGameA7" />
+
+    <TextView
+        android:id="@+id/textGameA7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@android:color/black"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textGameA8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textSetA"
+        app:layout_constraintTop_toBottomOf="@+id/textPrevius" />
+
+    <TextView
+        android:id="@+id/textPointsB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|end"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toStartOf="@+id/pointB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textGameB"
+        app:layout_constraintTop_toBottomOf="@+id/textPointsA" />
+
+    <TextView
+        android:id="@+id/textPointsA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|end"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textPointsB"
+        app:layout_constraintEnd_toStartOf="@+id/pointA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textGameA"
+        app:layout_constraintTop_toBottomOf="@+id/textPoints" />
+
+    <TextView
+        android:id="@+id/textPoints"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="Points"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textPointsA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textGames"
+        app:layout_constraintTop_toBottomOf="@+id/textGameA8" />
+
+    <TextView
+        android:id="@+id/textGameB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toStartOf="@+id/textPointsB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGameA" />
+
+    <TextView
+        android:id="@+id/textGameA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@android:color/black"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textGameB"
+        app:layout_constraintEnd_toStartOf="@+id/textPointsA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGames" />
+
+    <TextView
+        android:id="@+id/textGames"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="Games"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textGameA"
+        app:layout_constraintEnd_toStartOf="@+id/textPoints"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSetB" />
+
+    <TextView
+        android:id="@+id/textSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:gravity="center"
+        android:text="Sets"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textSetA"
+        app:layout_constraintEnd_toStartOf="@+id/textPrevius"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPrevius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Previus Sets"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textGameA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textSets"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSetA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:background="@android:color/black"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="0"
+        android:textAllCaps="false"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textSetB"
+        app:layout_constraintEnd_toStartOf="@+id/textGameA7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSets" />
+
+    <TextView
+        android:id="@+id/textSetB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="0"
+        android:textColor="@color/LED"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textGames"
+        app:layout_constraintEnd_toStartOf="@+id/textGameA8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSetA" />
+
+    <Button
+        android:id="@+id/pointA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/pointB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textPointsA"
+        app:layout_constraintTop_toBottomOf="@+id/textPoints" />
+
+    <Button
+        android:id="@+id/pointB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textPointsB"
+        app:layout_constraintTop_toBottomOf="@+id/pointA" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/pointB" />
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/radioGroup2"
+       android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/clear"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textPointsB" >
+
+       <RadioButton
+           android:id="@+id/radioButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="3"
+           app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+           app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+           app:layout_constraintHorizontal_bias="0.723"
+           app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+           app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+           app:layout_constraintVertical_bias="0.492" />
+
+       <RadioButton
+           android:id="@+id/radioButton2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="5"
+           app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+           app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+           app:layout_constraintHorizontal_bias="0.5"
+           app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+           app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+   </RadioGroup>
+    
+
+
+</android.support.constraint.ConstraintLayout>
