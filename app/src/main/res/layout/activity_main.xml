@@ -11,7 +11,6 @@
         android:id="@+id/textGameA8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@android:color/black"
         android:gravity="center|center_horizontal|center_vertical"
         android:text=" _ _ _ _ "
@@ -22,13 +21,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textSetB"
-        app:layout_constraintTop_toBottomOf="@+id/textGameA7" />
+        app:layout_constraintTop_toBottomOf="@+id/textSetsA" />
 
     <TextView
-        android:id="@+id/textGameA7"
+        android:id="@+id/textSetsA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@android:color/black"
         android:gravity="center|center_horizontal|center_vertical"
         android:text=" _ _ _ _ "
@@ -45,7 +43,6 @@
         android:id="@+id/textPointsB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@android:color/black"
         android:gravity="center_vertical|end"
         android:text="    0 "
@@ -53,7 +50,7 @@
         android:textColor="@color/LED"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
-        app:layout_constraintEnd_toStartOf="@+id/pointB"
+        app:layout_constraintEnd_toStartOf="@+id/botonPuntoB"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textGameB"
         app:layout_constraintTop_toBottomOf="@+id/textPointsA" />
@@ -62,7 +59,6 @@
         android:id="@+id/textPointsA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@android:color/black"
         android:gravity="center_vertical|end"
         android:text="    0 "
@@ -70,7 +66,7 @@
         android:textColor="@color/LED"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/textPointsB"
-        app:layout_constraintEnd_toStartOf="@+id/pointA"
+        app:layout_constraintEnd_toStartOf="@+id/botonPuntoA"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textGameA"
         app:layout_constraintTop_toBottomOf="@+id/textPoints" />
@@ -109,7 +105,6 @@
         android:id="@+id/textGameA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@android:color/black"
         android:gravity="center|center_horizontal|center_vertical"
         android:text=" 0 "
@@ -164,7 +159,7 @@
         android:gravity="center"
         android:text="Previus Sets"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textGameA7"
+        app:layout_constraintBottom_toTopOf="@+id/textSetsA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textSets"
@@ -174,7 +169,6 @@
         android:id="@+id/textSetA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoText="false"
         android:background="@android:color/black"
         android:gravity="center|center_horizontal|center_vertical"
         android:paddingLeft="15dp"
@@ -184,7 +178,7 @@
         android:textColor="@color/LED"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/textSetB"
-        app:layout_constraintEnd_toStartOf="@+id/textGameA7"
+        app:layout_constraintEnd_toStartOf="@+id/textSetsA"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSets" />
@@ -207,37 +201,40 @@
         app:layout_constraintTop_toBottomOf="@+id/textSetA" />
 
     <Button
-        android:id="@+id/pointA"
+        android:id="@+id/botonPuntoA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="POINT A"
-        app:layout_constraintBottom_toTopOf="@+id/pointB"
+        android:onClick="onClick"
+        android:text="@string/pointA"
+        app:layout_constraintBottom_toTopOf="@+id/botonPuntoB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textPointsA"
         app:layout_constraintTop_toBottomOf="@+id/textPoints" />
 
     <Button
-        android:id="@+id/pointB"
+        android:id="@+id/botonPuntoB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="POINT B"
         app:layout_constraintBottom_toTopOf="@+id/clear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textPointsB"
-        app:layout_constraintTop_toBottomOf="@+id/pointA" />
+        app:layout_constraintTop_toBottomOf="@+id/botonPuntoA" />
 
     <Button
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="CLEAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/radioGroup2"
-        app:layout_constraintTop_toBottomOf="@+id/pointB" />
+        app:layout_constraintTop_toBottomOf="@+id/botonPuntoB" />
 
    <RadioGroup
        android:layout_width="wrap_content"

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tennis Scores</string>
+    <string name="pointA">POINT A</string>
 </resources>
